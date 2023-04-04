@@ -19,12 +19,12 @@ export const sniper: Person = {
 };
 
 export const constructionYard: Camp = {
+  abilities: [],
   name: "Construction Yard",
   imageURL: constructionCampUrl,
   type: CardType.CAMP,
   isInjured: false,
   isReady: false,
-  waterCost: 0,
   isDestroyed: false,
 }
 
