@@ -1,3 +1,3 @@
 export function DiscardPile() {
-  return <div>Discard pile</div>
+  return <div>Discard pile</div>;
 }

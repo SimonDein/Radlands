@@ -5,7 +5,7 @@ export interface Player {
   eventQueue: Event[];
   remainingWater: number;
   isWaterSiloAvailable: boolean;
-  isRaidersAvailable: boolean
+  isRaidersAvailable: boolean;
 }
 
 export enum CardType {
@@ -23,16 +23,14 @@ export enum Effect {
   DRAW_CARD = "Draw card",
   RESTORE = "Restore",
   GAIN_WATER = "Gain water",
-  GAIN_PUNK = "Gain punk"
+  GAIN_PUNK = "Gain punk",
 }
 
-export enum EventEffect {
-
-}
+export enum EventEffect {}
 
 export interface Ability {
-  waterCost: number,
-  effect: Effect,
+  waterCost: number;
+  effect: Effect;
 }
 
 export interface Card {
@@ -42,11 +40,11 @@ export interface Card {
 }
 
 export interface Person extends Card {
-  abilities: Ability[],
+  abilities: Ability[];
   isReady: boolean;
   isInjured: boolean;
   junkEffect: Effect;
-  traits: [],
+  traits: [];
   waterCost: number;
 }
 
@@ -62,7 +60,7 @@ export interface Event extends Card {
 }
 
 export interface Camp extends Card {
-  abilities: Ability[],
+  abilities: Ability[];
   isDestroyed: boolean;
   isReady: boolean;
   isInjured: boolean;

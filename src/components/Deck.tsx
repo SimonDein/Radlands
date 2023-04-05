@@ -1,3 +1,3 @@
 export function Deck() {
-  return <div>Deck</div>
+  return <div>Deck</div>;
 }

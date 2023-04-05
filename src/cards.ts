@@ -1,7 +1,7 @@
-import {Camp, CardType, Effect, Person} from "./types";
+import { Camp, CardType, Effect, Person } from "./types";
 
-import sniperImgUrl from './assets/sniper.png';
-import constructionCampUrl from './assets/contruction-yard.png';
+import sniperImgUrl from "./assets/sniper.png";
+import constructionCampUrl from "./assets/contruction-yard.png";
 
 export const sniper: Person = {
   name: "Sniper",
@@ -9,10 +9,12 @@ export const sniper: Person = {
   waterCost: 0,
   junkEffect: Effect.INJURE,
   type: CardType.PERSON,
-  abilities: [{
-    waterCost: 2,
-    effect: Effect.DAMAGE
-  }],
+  abilities: [
+    {
+      waterCost: 2,
+      effect: Effect.DAMAGE,
+    },
+  ],
   traits: [],
   isInjured: false,
   isReady: false,
@@ -26,5 +28,4 @@ export const constructionYard: Camp = {
   isInjured: false,
   isReady: false,
   isDestroyed: false,
-}
-
+};
