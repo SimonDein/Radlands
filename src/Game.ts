@@ -1,6 +1,7 @@
 // Game.ts
 import type { Game, Move } from "boardgame.io";
 import {Card, Player} from "./types";
+import {sniper} from "./cards";
 
 // The game state passed to any handlers
 export interface GameState {
@@ -21,18 +22,32 @@ function setupPlayer(): Player {
   }
 }
 
+function setupDeck(): Card[] {
+  return Array(60).fill(sniper);
+}
+
 
 export const Radlands: Game<GameState> = {
   setup: function() {
     return {
       players: [setupPlayer(), setupPlayer()],
-      deck: [],
+      deck: setupDeck(),
       discardPile: [],
     }
   },
   moves: {
-    drawCard: ({G, playerId}, id) => {
-      //
+    drawCard: ({G, playerId, ctx, events}) => {
+      const currentPlayer = G.players[ctx.playOrderPos];
+      const drawedCard = G.deck.pop();
+
+      if (drawedCard == undefined) {
+        G.deck = setupDeck();
+      } else {
+        currentPlayer.hand.push(drawedCard);
+      }
+    },
+    reShuffle:  ({G, playerId, ctx}, id) => {
+      G.deck = setupDeck();
     }
   }
 };
