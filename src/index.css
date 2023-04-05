@@ -11,3 +11,7 @@ body,
   font-family: "Barlow", "roboto", "open sans", sans-serif;
   font-variant-numeric: tabular-nums;
 }
+
+.bgio-client {
+  height: 100%
+}
