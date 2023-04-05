@@ -12,7 +12,7 @@ export interface GameState {
 
 function setupPlayer(): Player {
   return {
-    hand: [],
+    hand: [sniper, sniper],
     people: [[], [], []],
     camps: [],
     eventQueue: [],

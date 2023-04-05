@@ -1,0 +1,13 @@
+.board {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+}
+
+.board__player-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
