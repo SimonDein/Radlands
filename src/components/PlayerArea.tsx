@@ -1,5 +1,3 @@
 export function PlayerArea() {
-  return <div>
-    Player Area
-  </div>
+  return <div>Player Area</div>;
 }
