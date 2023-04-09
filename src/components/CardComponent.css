@@ -1,0 +1,9 @@
+
+
+.card__component {
+    height: 130px;
+    aspect-ratio: 2/3;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}

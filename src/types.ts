@@ -9,10 +9,11 @@ export interface Player {
 }
 
 export enum CardType {
-  PERSON,
-  EVENT,
-  CAMP,
-  PUNK,
+  PERSON = "Person",
+  EVENT = "Event",
+  CAMP = "Camp",
+  PUNK = "Punk",
+  DECK = "Deck" //drag from deck to hand react-dnd accept/type.
 }
 
 export enum Effect {

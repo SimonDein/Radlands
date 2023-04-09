@@ -3,6 +3,13 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 100%;
   gap: 10px;
+}
+
+.player-hand {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
 }

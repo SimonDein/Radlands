@@ -1,0 +1,8 @@
+
+
+.card__container {
+    height: 130px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+}
